@@ -1,0 +1,1281 @@
+[
+    {
+        "id": "f8cb3a5b1dae3f53",
+        "type": "tab",
+        "label": "플로우 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9337e32321137a77",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0fb356",
+                "baseFont": "Gill Sans,Geneva,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#c4ddde",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0fb356",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0fb356",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#22ec7a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#0fb356",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Gill Sans,Geneva,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "25aa682fe39b99be",
+        "type": "ui_group",
+        "name": "정보 입력",
+        "tab": "ad1f88057c179964",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2150d925fdcdd496",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://broker.mqtt-dashboard.com/",
+        "port": "1883",
+        "clientid": "AIS1517",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "86cf4c8570f9ae4d",
+        "type": "ui_group",
+        "name": "목표값",
+        "tab": "992d1d1ab9fd6fe1",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d3b513850ddd5121",
+        "type": "ui_group",
+        "name": "측정값",
+        "tab": "992d1d1ab9fd6fe1",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e9baa2f8298e1c8d",
+        "type": "ui_group",
+        "name": "기록 확인하기",
+        "tab": "ec3cc74012e8f6cf",
+        "order": 3,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ebfd73187c537212",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "iot",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "313f1ca3ed8bb1ff",
+        "type": "ui_spacer",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "spacer",
+        "group": "25aa682fe39b99be",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d4d22af582ddfe72",
+        "type": "ui_spacer",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "spacer",
+        "group": "25aa682fe39b99be",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ad1f88057c179964",
+        "type": "ui_tab",
+        "name": "시작 화면",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "992d1d1ab9fd6fe1",
+        "type": "ui_tab",
+        "name": "관리",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec3cc74012e8f6cf",
+        "type": "ui_tab",
+        "name": "기록 보기",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "01f5ac1848ae728b",
+        "type": "ui_text_input",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "온도",
+        "label": "온도",
+        "group": "25aa682fe39b99be",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "targetTemp",
+        "sendOnBlur": true,
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "6a3ce52c79f49737",
+                "7f55c25fb0a4afaf"
+            ]
+        ]
+    },
+    {
+        "id": "6a3ce52c79f49737",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Store Target Temp",
+        "func": "flow.set('targetTemp', parseFloat(msg.payload));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b8b2cd054b97667",
+        "type": "inject",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "cab08c1526b533ac"
+            ]
+        ]
+    },
+    {
+        "id": "cab08c1526b533ac",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Compare Temp",
+        "func": "var sensorTemp = flow.get('sensorTemp') || 0;\nvar targetTemp = flow.get('targetTemp') || 0;\n\nvar temp = sensorTemp - targetTemp;\n\nvar msg1 = {payload: '1'};\nvar msg2 = { payload: '2'};\nvar msg3 = { payload: '3'};\n\nif (temp > 0.5) {\n    node.warn(temp);\n    return msg1;\n}\nelse if (temp < -0.5) {\n    node.warn(temp);\n    return msg2;\n}\nreturn msg3;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "de570933b208774d"
+            ]
+        ]
+    },
+    {
+        "id": "d886de17d2d6faa7",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Parse Sensor Data",
+        "func": "flow.set('sensorTemp', parseFloat(msg.payload.temp));\nflow.set('sensorHumi', parseFloat(msg.payload.humi));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c72cb341fe0f2012",
+        "type": "mqtt in",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "DHT11_sub",
+        "topic": "AIS1517_dht",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2150d925fdcdd496",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "d886de17d2d6faa7",
+                "ff669191c8343e68"
+            ]
+        ]
+    },
+    {
+        "id": "de570933b208774d",
+        "type": "mqtt out",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "topic": "AIS1517_temp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2150d925fdcdd496",
+        "x": 660,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7f55c25fb0a4afaf",
+        "type": "ui_text",
+        "z": "f8cb3a5b1dae3f53",
+        "group": "86cf4c8570f9ae4d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "목표 온도",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 400,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3596518c056cba23",
+        "type": "ui_text_input",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "토양 수분",
+        "label": "토양 수분",
+        "tooltip": "",
+        "group": "25aa682fe39b99be",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "targetSoilHumi",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "fcf0018de58c5897",
+                "a330412d38a385b1"
+            ]
+        ]
+    },
+    {
+        "id": "fcf0018de58c5897",
+        "type": "ui_text",
+        "z": "f8cb3a5b1dae3f53",
+        "group": "86cf4c8570f9ae4d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "목표 토양 수분",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 650,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "34e1f56f3b46ae60",
+        "type": "mqtt in",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "SoilMoisture_sub",
+        "topic": "AIS1517_soil_humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2150d925fdcdd496",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 680,
+        "wires": [
+            [
+                "d47594c207377cd0",
+                "1b061dacccfa2c75"
+            ]
+        ]
+    },
+    {
+        "id": "d47594c207377cd0",
+        "type": "json",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "property": "payload.humidity",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "f65568e692278748"
+            ]
+        ]
+    },
+    {
+        "id": "f65568e692278748",
+        "type": "ui_text",
+        "z": "f8cb3a5b1dae3f53",
+        "group": "d3b513850ddd5121",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "현재 토양 수분",
+        "format": "{{msg.payload.humidity}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 600,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a330412d38a385b1",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Store Target Humi",
+        "func": "flow.set('targetSoilHumi', parseFloat(msg.payload));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b061dacccfa2c75",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Parse Sensor Data",
+        "func": "var payload = msg.payload; // msg.payload가 이미 객체로 전송되는 경우 바로 접근합니다.\nflow.set('sensorSoilHumi', parseFloat(payload.humidity)); // humidity 값을 추출하여 저장합니다.\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82d04c1cae485799",
+        "type": "inject",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 840,
+        "wires": [
+            [
+                "5b7185d71cdb7e1b"
+            ]
+        ]
+    },
+    {
+        "id": "5b7185d71cdb7e1b",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "Compare soil",
+        "func": "var target = flow.get('targetSoilHumi') || 0;\nvar sensor = flow.get('sensorSoilHumi') || 0;\n\nvar soil = sensor - target;\n\nvar msg1 = { payload: '1' }; // 센서 값이 목표 값보다 5 이상 높을 때\nvar msg2 = { payload: '2' }; // 센서 값이 목표 값보다 5 이하일 때\nvar msg3 = { payload: '3' }; // 센서 값이 목표 값과 차이가 적을 때\n\n// 디버그 메시지 추가\nnode.warn(\"Target Soil Humidity: \" + target);\nnode.warn(\"Sensor Soil Humidity: \" + sensor);\nnode.warn(\"Soil Difference: \" + soil);\n\nif (soil > 5) {\n    return msg1;\n} else if (soil < -5) {\n    return msg2;\n}\n\nmsg.payload = '토양 수분이 적절합니다.';\nreturn msg3;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 840,
+        "wires": [
+            [
+                "17f25b399bfae77a"
+            ]
+        ]
+    },
+    {
+        "id": "17f25b399bfae77a",
+        "type": "mqtt out",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "topic": "AIS1517_soil",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2150d925fdcdd496",
+        "x": 640,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "ff669191c8343e68",
+        "type": "json",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "property": "payload.temp",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "5e18908f391e9d4d"
+            ]
+        ]
+    },
+    {
+        "id": "5e18908f391e9d4d",
+        "type": "ui_text",
+        "z": "f8cb3a5b1dae3f53",
+        "group": "d3b513850ddd5121",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "현재 온도",
+        "format": "{{msg.payload.temp}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 640,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "button1",
+        "type": "ui_button",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "25aa682fe39b99be",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 960,
+        "wires": [
+            [
+                "function1"
+            ]
+        ]
+    },
+    {
+        "id": "function1",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "go to app",
+        "func": "return {payload: {tab: \"관리\"}};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 960,
+        "wires": [
+            [
+                "ui_control1"
+            ]
+        ]
+    },
+    {
+        "id": "ui_control1",
+        "type": "ui_ui_control",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "x": 570,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da60c6f004db2632",
+        "type": "ui_ui_control",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "events": "all",
+        "x": 580,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a98a49bad583f2db",
+        "type": "ui_button",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "86cf4c8570f9ae4d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1020,
+        "wires": [
+            [
+                "128789b0a1c53392"
+            ]
+        ]
+    },
+    {
+        "id": "128789b0a1c53392",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "go to start",
+        "func": "return {payload: {tab: \"시작 화면\"}};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1020,
+        "wires": [
+            [
+                "da60c6f004db2632"
+            ]
+        ]
+    },
+    {
+        "id": "09692c842124fa50",
+        "type": "inject",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "4337c80a4fe068a3"
+            ]
+        ]
+    },
+    {
+        "id": "4337c80a4fe068a3",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "function 1",
+        "func": "var sensorTemp1 = flow.get('sensorTemp');\nvar sensorHumi1 = flow.get('sensorHumi');\nvar sensorSoilHumi1 = flow.get('sensorSoilHumi');\nvar targetHumi1 = flow.get('targetHumi');\nvar targetTemp1 = flow.get('targetTemp');\n\n// 한국 시간 (UTC+9)으로 변환\nfunction getKoreanTime() {\n    var date = new Date();\n    return date.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false }).replace(/,/, '');\n}\n\nvar krDateString = getKoreanTime();\n\nsensorTemp1 = sensorTemp1 == null ? 'null' : sensorTemp1;\nsensorHumi1 = sensorHumi1 == null ? 'null' : sensorHumi1;\nsensorSoilHumi1 = sensorSoilHumi1 == null ? 'null' : sensorSoilHumi1;\ntargetHumi1 = targetHumi1 == null ? 'null' : targetHumi1;\ntargetTemp1 = targetTemp1 == null ? 'null' : targetTemp1;\n\nmsg.topic = \"insert into pampam (sensorTemp, sensorHumi, sensorSoilHumi, date) values(\" + sensorTemp1 + \", \" + sensorHumi1 + \", \" + sensorSoilHumi1 + \", '\" + krDateString + \"')\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1180,
+        "wires": [
+            [
+                "6186038bcc51c22b"
+            ]
+        ]
+    },
+    {
+        "id": "6186038bcc51c22b",
+        "type": "mysql",
+        "z": "f8cb3a5b1dae3f53",
+        "mydb": "ebfd73187c537212",
+        "name": "iot",
+        "x": 590,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15000bfa52b5178d",
+        "type": "ui_table",
+        "z": "f8cb3a5b1dae3f53",
+        "group": "e9baa2f8298e1c8d",
+        "name": "",
+        "order": 1,
+        "width": 20,
+        "height": 6,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 730,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "d6a3ce0c38ca63ec",
+        "type": "ui_chart",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "e9baa2f8298e1c8d",
+        "order": 2,
+        "width": 10,
+        "height": 5,
+        "label": "온도",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d72323",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5f810c4ee9f7835",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "sensorTemp",
+        "func": "var y = [];\nvar x = [];\n//msg.payload[].sensorTemp\n\nfor(var i = 0; i < msg.payload.length;i++)\n{\n    y.push(msg.payload[i].sensorTemp);\n    x.push(msg.payload[i].date);\n}\nmsg.payload = [{\n    series:[\"Temperature\"],\n    data:[y],\n    labels:x\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1360,
+        "wires": [
+            [
+                "d6a3ce0c38ca63ec"
+            ]
+        ]
+    },
+    {
+        "id": "f488fb5b7ebd728e",
+        "type": "debug",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "8cee0511cf10ba23",
+        "type": "ui_chart",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "e9baa2f8298e1c8d",
+        "order": 3,
+        "width": 10,
+        "height": 5,
+        "label": "습도",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6860675d92bc15ab",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "sensorHumi",
+        "func": "var y = [];\nvar x = [];\n//msg.payload[].sensorHumi\n\nfor(var i = 0;i<msg.payload.length;i++)\n{\n    y.push(msg.payload[i].sensorHumi);\n    x.push(msg.payload[i].date);\n}\nmsg.payload = [{\n    series:[\"Humidity\"],\n    data:[y],\n    labels:x\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1420,
+        "wires": [
+            [
+                "8cee0511cf10ba23"
+            ]
+        ]
+    },
+    {
+        "id": "b7f5a106fa6827cd",
+        "type": "ui_chart",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "e9baa2f8298e1c8d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "토양 수분",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "sensorSoilHumi",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "sensorSoilHumi",
+        "func": "var y = [];\nvar x = [];\n//msg.payload[].sensorSoilHumi\n\nfor(var i = 0;i<msg.payload.length;i++)\n{\n    y.push(msg.payload[i].sensorSoilHumi);\n    x.push(msg.payload[i].date);\n}\nmsg.payload = [{\n    series:[\"Soil Humidity\"],\n    data:[y],\n    labels:x\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "b7f5a106fa6827cd"
+            ]
+        ]
+    },
+    {
+        "id": "eab027be77a1bc89",
+        "type": "mysql",
+        "z": "f8cb3a5b1dae3f53",
+        "mydb": "ebfd73187c537212",
+        "name": "iot",
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "15000bfa52b5178d",
+                "a5f810c4ee9f7835",
+                "f488fb5b7ebd728e",
+                "6860675d92bc15ab",
+                "sensorSoilHumi"
+            ]
+        ]
+    },
+    {
+        "id": "70d1b77f22559efb",
+        "type": "inject",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "select * from pampam order by date desc limit 30;",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1380,
+        "wires": [
+            [
+                "eab027be77a1bc89"
+            ]
+        ]
+    },
+    {
+        "id": "9c32cfca04f81fdb",
+        "type": "ui_ui_control",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "events": "all",
+        "x": 580,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd09420a957d0bff",
+        "type": "ui_button",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "d3b513850ddd5121",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "View log",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1080,
+        "wires": [
+            [
+                "b4eee44ae68dfbf3"
+            ]
+        ]
+    },
+    {
+        "id": "b4eee44ae68dfbf3",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "go to log",
+        "func": "return {payload: {tab: \"기록 보기\"}};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1080,
+        "wires": [
+            [
+                "9c32cfca04f81fdb"
+            ]
+        ]
+    },
+    {
+        "id": "115d543e8383d973",
+        "type": "ui_button",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "e9baa2f8298e1c8d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "시작 화면으로",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "ef90342882bdbe85"
+            ]
+        ]
+    },
+    {
+        "id": "ef90342882bdbe85",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "go to app",
+        "func": "return {payload: {tab: \"시작 화면\"}};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1020,
+        "wires": [
+            [
+                "7a505bebe6b3a14e"
+            ]
+        ]
+    },
+    {
+        "id": "7a505bebe6b3a14e",
+        "type": "ui_ui_control",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "x": 1080,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bfbbd98257ba780",
+        "type": "ui_ui_control",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "events": "all",
+        "x": 1120,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd7bf662a29d5dd0",
+        "type": "ui_button",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "",
+        "group": "e9baa2f8298e1c8d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "관리 화면으로",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 760,
+        "y": 1080,
+        "wires": [
+            [
+                "ad3ec21f617e8b1b"
+            ]
+        ]
+    },
+    {
+        "id": "ad3ec21f617e8b1b",
+        "type": "function",
+        "z": "f8cb3a5b1dae3f53",
+        "name": "go to start",
+        "func": "return {payload: {tab: \"관리\"}};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1080,
+        "wires": [
+            [
+                "3bfbbd98257ba780"
+            ]
+        ]
+    }
+]
